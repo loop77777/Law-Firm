@@ -1,16 +1,22 @@
-import { Box } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import "./App.css";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import IntroPanel from "./components/IntroPanel";
+import WhyChooseUs from "./components/WhyChooseUs";
 
 function App() {
   return (
-    <div className="App" style={{ backgroundColor: "page.main" }}>
-      <Box sx={{ backgroundColor: "page.secondary" }}>
+    <Box className="App" sx={{ backgroundColor: "page.main" }}>
+      <Box sx={{ backgroundColor: "page.secondary" }} mb={4}>
         <Header />
         <HeroSection />
       </Box>
-    </div>
+      <Stack spacing={4} mb={4} mx={3}>
+        <IntroPanel />
+        <WhyChooseUs />
+      </Stack>
+    </Box>
   );
 }
 

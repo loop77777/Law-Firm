@@ -29,6 +29,7 @@ const HeroSection = () => {
             variant="subtitle1"
             sx={{
               textWrap: "balance",
+              opacity:"0.3"
             }}
           >
             We are here to help you with all your legal needs. We are a team of
