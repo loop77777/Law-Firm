@@ -18,6 +18,9 @@ let theme = createTheme({
     newsLetter: {
       background: "rgba(71, 71, 71, 0.50)", // Grey
     },
+    footer: {
+      background: "#1D1D1D", // Black
+    },
   },
   typography: {
     fontFamily: "Inter",
@@ -36,6 +39,16 @@ let theme = createTheme({
       styleOverrides: {
         root: {
           fontFamily: "Inter",
+        },
+      },
+    },
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: "#ffffff",
+          textDecoration: "none",
+          fontWeight: 500,
+          fontSize: "0.8rem",
         },
       },
     },
