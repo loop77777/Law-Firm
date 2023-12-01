@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import IntroPanel from "./components/IntroPanel";
 import WhyChooseUs from "./components/WhyChooseUs";
+import GridArea from "./components/GridArea";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Stack spacing={4} mb={4} mx={3}>
         <IntroPanel />
         <WhyChooseUs />
+       <GridArea />
       </Stack>
     </Box>
   );
