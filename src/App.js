@@ -7,6 +7,9 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import GridArea from "./components/GridArea";
 import Clients from "./components/Clients";
 import TeamPanel from "./components/TeamPanel";
+import FAQ from "./components/FAQ";
+import NewsLetter from "./components/NewsLetter";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,7 +24,10 @@ function App() {
         <GridArea />
         <Clients />
         <TeamPanel />
+        <FAQ />
+        <NewsLetter />
       </Stack>
+      <Footer />
     </Box>
   );
 }

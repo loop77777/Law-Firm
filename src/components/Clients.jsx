@@ -14,13 +14,13 @@ import jane from "../assets/clients/jane cooper.svg";
 import robert from "../assets/clients/robert fox.svg";
 
 // swiper active slide
-import "../App.css"
+import "../App.css";
 
 const Clients = () => {
   const nextRef = React.useRef(null);
   const prevRef = React.useRef(null);
   return (
-    <>
+    <Box height={"70vh"}>
       <Box
         sx={{
           display: "flex",
@@ -28,17 +28,9 @@ const Clients = () => {
           justifyContent: "space-between",
           alignItems: "center",
         }}
+        p={5}
       >
-        <Box
-          sx={
-            {
-              //   display: "flex",
-              //   justifyContent: "center",
-              //   alignItems: "center",
-              //   gap: "1rem",
-            }
-          }
-        >
+        <Box>
           <Typography variant="h4">What says our</Typography>
           <Typography variant="h4"> happy Clients</Typography>
         </Box>
@@ -176,6 +168,28 @@ const Clients = () => {
               alignItems: "flex-start",
               borderRadius: "0.875rem",
               border: "1.4px solid rgba(255, 255, 255, 0.10)",
+              background: "#2E2E2E",
+            }}
+            p={3}
+          >
+            <img src={jane} width={100} height={100} alt="icon" />
+            <Typography variant="h5">100% Success Rate</Typography>
+            <Typography variant="h6">Ceo of Hunt</Typography>
+            <Typography variant="body1" sx={{ opacity: "0.3" }}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              voluptatum.
+            </Typography>
+          </Box>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "1rem",
+              alignItems: "flex-start",
+              borderRadius: "0.875rem",
+              border: "1.4px solid rgba(255, 255, 255, 0.10)",
               background: "page.main",
             }}
             p={3}
@@ -189,8 +203,30 @@ const Clients = () => {
             </Typography>
           </Box>
         </SwiperSlide>
+        <SwiperSlide>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "1rem",
+              alignItems: "flex-start",
+              borderRadius: "0.875rem",
+              border: "1.4px solid rgba(255, 255, 255, 0.10)",
+              background: "#2E2E2E",
+            }}
+            p={3}
+          >
+            <img src={jane} width={100} height={100} alt="icon" />
+            <Typography variant="h5">100% Success Rate</Typography>
+            <Typography variant="h6">Ceo of Hunt</Typography>
+            <Typography variant="body1" sx={{ opacity: "0.3" }}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              voluptatum.
+            </Typography>
+          </Box>
+        </SwiperSlide>
       </Swiper>
-    </>
+    </Box>
     // </Box>
   );
 };

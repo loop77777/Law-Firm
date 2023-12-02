@@ -9,16 +9,16 @@ import elderAbuse from "../assets/elder abuse.svg";
 
 const GridArea = () => {
   return (
-    <Box>
+    <Box id="section3">
       <Typography
         variant="h3"
         sx={{ textAlign: "center", fontWeight: "bold" }}
-        my={4}
+        my={10}
       >
         Area of Practices
       </Typography>
       <br />
-      <Stack sx={{ alignItems: "center", gap: "1rem" }}>
+      <Stack sx={{ alignItems: "center", gap: "1rem" }} mb={5}>
         <Box
           sx={{
             display: "grid",

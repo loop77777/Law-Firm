@@ -4,12 +4,13 @@ import React from "react";
 const IntroPanel = () => {
   return (
     <Box
+     id="section2"
       sx={{
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         width: "100%",
-        height: "50vh",
+        height: "60vh",
       }}
     >
       <Typography variant="h3">Let's Introduce Ourself</Typography>

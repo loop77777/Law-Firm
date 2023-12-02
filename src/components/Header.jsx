@@ -1,10 +1,13 @@
 import React from "react";
 import { Box, Link } from "@mui/material";
 import logo from "../assets/logo.svg";
+import { Link as ScrollLink } from "react-scroll";
+// import { Link as MuiLink } from "@mui/material";
 
 const Header = () => {
   return (
     <Box
+      id="section1"
       sx={{
         width: "100%",
         maxWidth: "-webkit-fill-available",
@@ -14,19 +17,28 @@ const Header = () => {
         justifyContent: "space-between",
         // backgroundColor: "page.secondary",
       }}
+      mx={5}
       px={3}
     >
       <img src={logo} alt="logo" />
       <Box
         sx={{
           display: "flex",
-          gap: "1.5rem",
+          gap: "3rem",
         }}
       >
-        <Link href="/">Home</Link>
-        <Link href="/">Attorney</Link>
-        <Link href="/">Practice Areas</Link>
-        <Link href="/">About Us</Link>
+        <ScrollLink to="section1" smooth={true}>
+          <Link>Home</Link>
+        </ScrollLink>
+        <ScrollLink to="section2" smooth={true}>
+          <Link>Attorney</Link>
+        </ScrollLink>
+        <ScrollLink to="section3" smooth={true}>
+          <Link>Practice Areas</Link>
+        </ScrollLink>
+        <ScrollLink to="section4" smooth={true}>
+          <Link>About Us</Link>
+        </ScrollLink>
       </Box>
       <Link
         variant="contained"
